@@ -1,7 +1,7 @@
 // Main data source
 var tableData = data;
 
-// Filter the table with the FILTER TABLE button
+// Filter the table with the FIND button
 var buttonFind = d3.select("#filter-btn");
 
 // Complete the click handler for the form
@@ -33,7 +33,7 @@ filteredData.forEach((filteredData) => {
 });
 });
 
-// Clear the table with the CLEAR TABLE button
+// Clear the table with the CLEAR button
 var buttonClear = d3.select("#clear-btn");
 buttonClear.on("click", function() {
   d3.select("tbody")
