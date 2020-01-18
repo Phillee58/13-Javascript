@@ -38,6 +38,5 @@ var buttonClear = d3.select("#clear-btn");
 buttonClear.on("click", function() {
   d3.select("tbody")
     .selectAll("tr").remove()
-    .selectAll("td").remove()
+    location.reload()
 });
-
